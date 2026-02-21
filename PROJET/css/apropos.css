@@ -1,0 +1,208 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../images/fitness.webp');
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #ddd;
+}
+
+/* Header fixe en haut */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.menu {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Menu burger sur mobile */
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  nav ul.show {
+    display: flex;
+  }
+  
+  .menu {
+    display: block;
+  }
+}
+
+/* Sections principales */
+section {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.Apropos {
+  background: #000;
+  padding-top: 140px;
+}
+
+.Apropos h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.Apropos h1 span {
+  color: red;
+}
+
+.Apropos p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.titre {
+  color: red;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.sous-titre {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* Image mission */
+.mission img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Bouton simple */
+.bouton {
+  background: red;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+/* Valeurs en cartes */
+.valeurs > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.valeurs > div > div {
+  background: #222;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.valeurs h4 {
+  color: red;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+/* CTA final */
+.PRET A NOUS REJOINDRE {
+  background: #000;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.PRET A NOUS REJOINDRE h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.PRET A NOUS REJOINDRE h2 span {
+  color: red;
+}
+
+.PRET A NOUS REJOINDRE p {
+  font-size: 22px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 50px 5%;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.liens-footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.lien h4 {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.mention-projet {
+  color: #888;
+  font-size: 14px;
+  margin-top: 40px;
+}
